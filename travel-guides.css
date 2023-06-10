@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*this is a style for header in travel guides */
+header{
+   display: flex;
+   align-items: center;
+   margin: 20px;
+}
+.logo{
+    margin-right: auto;
+  }
+  .logo a{
+    padding-left: 30px;
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+    font-weight: 100;
+  }
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1em 0;
+}
+li a{
+    text-decoration: none;
+    color: #333;
+    padding-right: 3rem;
+    position: relative;
+    transition: all ease-in-out 250ms;
+}
+li a::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color: #4B0082;
+    bottom: -1em;
+    transition: all ease-in-out 250ms;
+  }
+
+  li a:hover::after {
+    width: 60%;
+  }
+
+  li a:hover {
+    color: #4B0082;
+  }
+
+  li:first-child {
+    margin-right: auto;
+    margin-left: 3em;
+  }
+  /* this a style for main in travel guides*/
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .guide-card {
+   
+  }
+  .travel-guide1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border: 1px solid #4B0082;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .guide-card h2 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  .guide-card p {
+    color: #666;
+  }
+
