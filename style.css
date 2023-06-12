@@ -31,7 +31,7 @@
     font-size: 30px;
     font-weight: 100;
   }
-  ul{
+  .header ul{
     list-style: none;
     margin: 0;
     display: flex;
@@ -40,7 +40,7 @@
     padding: 1em 0;
   }
 
-  li a {
+  .header li a {
     text-decoration: none;
     color: #333;
     padding-right: 3em;
@@ -48,7 +48,7 @@
     transition: all ease-in-out 250ms;
   }
 
-  li a::after {
+  .header li a::after {
     content: "";
     position: absolute;
     display: block;
@@ -59,15 +59,15 @@
     transition: all ease-in-out 250ms;
   }
 
-  li a:hover::after {
+ .header li a:hover::after {
     width: 60%;
   }
 
-  li a:hover {
+ .header li a:hover {
     color: var(--pink);
   }
 
-  li:first-child {
+ .header li:first-child {
     margin-right: auto;
     margin-left: 3em;
   }
@@ -155,13 +155,22 @@
       font-size: 20px;
     }
   }
+  /* stly for travel overview*/
+  .travel-overview{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  .travel-overview h3{
+    font-size: xx-large;
+  }
+  .span-overview-hotel{
+    font-size: xx-large;
+    color: #4B0082;
+  }
   /*syle for the destination guide */
-  .checked{
-    color: orange;
-  }
-  .rating{
-    padding: 10px;
-  }
   
   .each-travel-guide{
     display: flex;
@@ -230,12 +239,60 @@
 .read-more1 a:hover {
    text-decoration-line: underline;
   }
-  #travel-guide{
+
+ #travel-guide {
     margin: 10px 10px;
   }
+/* style for hotels*/
+.hotel-reviews{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+.each-hotel-guide{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+}
+.hotel-destination{
+  display: inline-block;
+  margin: 30px;
+  width: 300px;
+ 
+}
+.hotel-destination-image {
+  position: relative;
+}
+
+
+.hotel-discription{
+  padding: 10px;
+}
+
+.hotel-image  img{
+  border-radius: 10%;
+  display: inline;
+}
+.under-hotel-image{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px;
+}
+.checked{
+  color: orange;
+}
+.hotel-rating{
+  padding: 10px;
+}
+
+ /* style for footer */ 
 
 footer {
-  background-color: #333;
+  background-color: #5a3b70;
   color: #fff;
   padding: 20px;
 }
@@ -251,14 +308,10 @@ footer {
 .footer-links,
 .newsletter {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   flex-basis: 25%;
   margin-bottom: 20px;
 }
-
-
 
  .footer-content h3 {
   display: flex;
@@ -268,10 +321,35 @@ footer {
   font-size: 18px;
    margin-top: 0;
 }
-
-ul {
+ 
+.footer-content ul {
+  display: flex;
   list-style: none;
+  color: #4B0082;
   padding: 0;
+}
+.social-media a{
+  color: #4B0082;
+  margin-right: 30px;
+  cursor: pointer;
+  font-size: xx-large;
+}
+.social-media a i:hover {
+  color: #4B0082;
+}
+
+.footer-links ul{
+  display: flex;
+  flex-direction: column;
+}
+.footer-links ul li{
+ margin-bottom: 20px;
+
+}
+.footer-links a:hover{
+  /* text-decoration: underline; */
+  background-color: #491370;
+  padding: 5px;
 }
 
 .footer-content ul li a{
@@ -291,14 +369,15 @@ input[type="email"] {
 
 button[type="submit"] {
   padding: 8px 20px;
-  background-color: #5b3974;
+  background-color: #623681;
+  border-radius: 5px;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #5a3b70;
+  background-color: #491370;
 }
 .copyright{
   display: flex;
