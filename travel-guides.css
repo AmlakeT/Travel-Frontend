@@ -61,22 +61,39 @@ li a::after {
     padding: 20px;
   }
   
-  h1 {
+  h1{
     color: #333;
+    text-align: center;
+    margin-bottom: 10px;
   }
-  
-  .guide-card {
-   
+  .para{
+    color: #4B0082;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 30px;
   }
   .travel-guide1{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #f9f9f9;
-    border: 1px solid #4B0082;
-    border-radius: 4px;
-    padding: 20px;
+    padding: 50px 80px;
     margin-bottom: 20px;
+  }
+  .travel-guide-image{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .guide-card{
+    width: 50%;
+   
+  }
+  img{
+    height: 300px;
+    object-fit: cover;
+    width: 300px;
+    border-radius: 10px;
   }
   
   .guide-card h2 {
