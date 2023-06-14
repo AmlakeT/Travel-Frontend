@@ -6,6 +6,13 @@ links.forEach(link => {
     window.location.href = "travel-guides.html";
   }
   })
+  function redirect() {
+    window.location.href = "planTrip.html";
+}
+function signIn(){
+  window.location.href = "signInPage.html"
+}
+
 
 
 // links.onclick = function(){
