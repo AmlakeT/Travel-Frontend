@@ -66,12 +66,14 @@ li a::after {
     text-align: center;
     margin-bottom: 10px;
   }
+
   .para{
     color: #4B0082;
     text-align: center;
     font-size: x-large;
     margin-bottom: 30px;
   }
+
   .travel-guide1{
     display: flex;
     align-items: center;
@@ -104,4 +106,74 @@ li a::after {
   .guide-card p {
     color: #666;
   }
-
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact-info,
+  .social-media,
+  .footer-links,
+  .newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+   .footer-content h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+     margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li a{
+    color: #fff;
+  }
+   
+   .footer-content a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  input[type="email"] {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 8px 20px;
+    background-color: #5b3974;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #5a3b70;
+  }
+  .copyright{
+    display: flex;
+    justify-content: center;
+  }
+   
